@@ -24,9 +24,6 @@ wget -O view_logs.sh https://raw.githubusercontent.com/a3165458/airchains/main/v
 卸载节点
 wget -O uninstall_node.sh https://raw.githubusercontent.com/a3165458/airchains/main/uninstall_node.sh && chmod +x uninstall_node.sh && ./uninstall_node.sh
 
-设置快捷键
-wget -O check_and_set_alias.sh https://raw.githubusercontent.com/a3165458/airchains/main/check_and_set_alias.sh && chmod +x check_and_set_alias.sh && ./check_and_set_alias.sh
-
 创建验证者
 wget -O add_validator.sh https://raw.githubusercontent.com/a3165458/airchains/main/add_validator.sh && chmod +x add_validator.sh && ./add_validator.sh
 
@@ -35,3 +32,6 @@ wget -O delegate_self_validator.sh https://raw.githubusercontent.com/a3165458/ai
 
 释放出监狱
 wget -O unjail.sh https://raw.githubusercontent.com/a3165458/airchains/main/unjail.sh && chmod +x unjail.sh && ./unjail.sh
+
+如果有创建验证者务必备份路径 $HOME/.junction/config/ 下 `priv_validator_key.json` 文件
+wget -O priv_validator_key.sh https://raw.githubusercontent.com/a3165458/airchains/main/priv_validator_key.sh && chmod +x priv_validator_key.sh && ./priv_validator_key.sh
